@@ -22,7 +22,7 @@ This tool allows you to get notified via messenger if the queue gets below a spe
 
 ## Notice on Notifictation Feature
 
-XIVNotifier uses the CallMeBot API for notifying via Signal or WhatsApp Messenger. To use the feature, you need to create an API key for free. 
+XIVNotifier uses the CallMeBot API for notifying via Signal or WhatsApp Messenger. To use the feature, you need to create an API key for free and enter it in the program along with your mobile phone number. 
 
 Details are here for [Whatsapp](https://www.callmebot.com/blog/free-api-whatsapp-messages/) and [Signal](https://www.callmebot.com/blog/free-api-signal-send-messages/)
 
