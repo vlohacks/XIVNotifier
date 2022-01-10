@@ -2,6 +2,8 @@
 
 Final Fantasy XIV Login Queue notifier
 
+Documentation is available in the following languages: [English](README.md) [Deutsch](README.de.md)
+
 ![Screenshot](screenshot.png)
 
 ## Purpose
