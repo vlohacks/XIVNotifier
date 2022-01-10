@@ -12,8 +12,6 @@ private:
 
     void *ptr;
     HANDLE proc;
-    uint32_t ppl_ahead;
-
 
     DWORD pid_by_exename(const WCHAR *exe_filename);
     void* find_mem_location(HANDLE proc);

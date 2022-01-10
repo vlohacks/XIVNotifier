@@ -3,8 +3,9 @@
 #include <QDebug>
 
 XIVLoginObserver::XIVLoginObserver()
-    : proc(nullptr)
-    , ptr(nullptr)
+    : ptr(nullptr)
+    , proc(nullptr)
+
 {}
 
 bool XIVLoginObserver::hookGame()
@@ -43,7 +44,7 @@ int XIVLoginObserver::getQueue()
 {
     char buffer[12];
     size_t num_read;
-    uint32_t ppl_ahead;
+    uint32_t ppl_ahead = 0;
 
     if (!ptr)
         return -1;
@@ -129,7 +130,7 @@ void* XIVLoginObserver::find_mem_location(HANDLE proc)
                 for (ptr = 0; ptr < info.RegionSize - 4; ptr += 4) {
                     if (*(uint64_t*)&buffer[ptr + 4] == MAGIC_SIGNATURE) {
                         free(buffer);
-                        return (void*)(info.BaseAddress + ptr);
+                        return (void*)((char*)info.BaseAddress + ptr);
                     }
                 }
             }

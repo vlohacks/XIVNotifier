@@ -157,6 +157,8 @@ void MainWindow::timer_timeout()
                 return;
             }
 
+            qDebug() << UrlSpec;
+
             qnam.get(QNetworkRequest(QUrl::fromUserInput(UrlSpec)));
         }
    }
