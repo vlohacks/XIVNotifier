@@ -137,10 +137,8 @@ void MainWindow::timer_timeout()
 
         queue_last = queue_current;
 
-        if (est.isValid())
+        if (est.isValid() && queue_current > 0)
             Message += tr("\nEstaminated login in %1 hour%2 and %3 minute%4").arg(QString::number(est.hour()), est.hour() == 1 ? "" : "s", QString::number(est.minute()), est.minute() == 1 ? "" : "s");
-
-        qDebug() << Message;
 
         if (ui->chkNotificationEnabled->isChecked() && (queue_current < ui->txtNotificationThreshold->text().toInt())) {
             switch (ui->cmbNotificationMethod->currentData().toInt()) {
