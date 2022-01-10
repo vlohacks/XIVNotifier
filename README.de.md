@@ -30,5 +30,5 @@ Weitere Details hier für [Whatsapp](https://www.callmebot.com/blog/free-api-wha
 
 ## Informationen und Rechtliches
 
-Der Autor übernimmt keinerlei Haftung bei Benutzung dieser Softwarety.
+Der Autor übernimmt keinerlei Haftung bei Benutzung dieser Software.
 
