@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+## Cyndi's FFXIV Login Notifier
 
-You can use the [editor on GitHub](https://github.com/vlohacks/XIVNotifier/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Got large login queues in Final Fantasy 14, but still got a real life? Then this is the right tool for you, as it was for me!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* Get informed via eitherr WhatsApp or Signal when the game is about to log you in
+* Get a broad estamination about how long the login takes
 
-### Markdown
+### Installation and usage
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* Download the latest release (zip)
+* Unpack it to a folder of your choice
+* Get an API key for CallMeBot and configure it along with your mobile phone number 
+* Run the game and queue for login
+* Do other stuff instead of waiting in front of your Computer ;-)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vlohacks/XIVNotifier/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
