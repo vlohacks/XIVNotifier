@@ -13,7 +13,15 @@ Got large login queues in Final Fantasy 14, but still got a real life? Then this
 
 * Download the latest release (zip) [here](https://github.com/vlohacks/XIVNotifier/releases/latest)
 * Unpack it to a folder of your choice
+* launch xivnotifier.exe
 * Get an API key for CallMeBot and configure it along with your mobile phone number 
 * Run the game and queue for login
 * Do other stuff instead of waiting in front of your Computer ;-)
 
+## Known Bugs
+
+* The detection of the login queue counter address is still prone to false positives, especially when being logged. Just close the application in this case.
+
+## Get in Touch
+
+Visit [Cynthia Cyber](https://de.finalfantasyxiv.com/lodestone/character/23133327/) on server Shiva / european data center Light.
