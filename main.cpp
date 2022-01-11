@@ -4,6 +4,9 @@
 
 int main(int argc, char *argv[])
 {
+    QCoreApplication::setOrganizationName("Cyndi");
+    QCoreApplication::setApplicationName("FFXIVNotifier");
+
     QApplication a(argc, argv);
     MainWindow w;
     w.show();

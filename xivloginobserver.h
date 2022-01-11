@@ -12,6 +12,8 @@ private:
 
     void *ptr;
     HANDLE proc;
+    DWORD pid;
+    const WCHAR *exe_name;
 
     DWORD pid_by_exename(const WCHAR *exe_filename);
     void* find_mem_location(HANDLE proc);
@@ -22,6 +24,14 @@ public:
     bool hookGame();
     int getQueue();
     void reset();
+
+    bool hasPid() const { return pid != 0; }
+    bool hasPtr() const { return ptr != 0; }
+
+    const void *getPtr() const { return ptr; }
+    const uint64_t getPtrU64() const { return (uint64_t)ptr; }
+    const DWORD getPid() const { return pid; }
+    const WCHAR *getExeName() const { return exe_name; }
 };
 
 #endif // XIVLOGINOBSERVER_H

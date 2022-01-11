@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>res/bullet_green.png</file>
+        <file>res/cross.png</file>
+        <file>res/tick.png</file>
+    </qresource>
+</RCC>

@@ -10,9 +10,9 @@ XIVLoginObserver::XIVLoginObserver()
 
 bool XIVLoginObserver::hookGame()
 {
-    DWORD pid;
     const WCHAR *str;
     int i;
+    ptr = nullptr;
 
     const WCHAR *exe_names[] = {
         L"ffxiv_dx11.exe",
@@ -22,8 +22,10 @@ bool XIVLoginObserver::hookGame()
 
     for (i = 0; (str = exe_names[i]) != 0; i++) {
         pid = pid_by_exename(str);
-        if (pid > 0)
+        if (pid > 0) {
+            exe_name = str;
             break;
+        }
     }
 
     if (pid == 0)
@@ -127,7 +129,7 @@ void* XIVLoginObserver::find_mem_location(HANDLE proc)
                 // faster than ReadProcessMemory system calls every 4 bytes.
                 ReadProcessMemory(proc, (void*)ptr, buffer,
                     info.RegionSize, &num_read);
-                for (ptr = 0; ptr < info.RegionSize - 4; ptr += 4) {
+                for (ptr = 0; ptr < info.RegionSize - 12; ptr += 4) {
                     if (*(uint64_t*)&buffer[ptr + 4] == MAGIC_SIGNATURE) {
                         free(buffer);
                         return (void*)((char*)info.BaseAddress + ptr);

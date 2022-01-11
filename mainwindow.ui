@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>283</width>
-    <height>441</height>
+    <width>292</width>
+    <height>436</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,25 +17,12 @@
    <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>400</y>
-      <width>261</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Start</string>
-    </property>
-   </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>261</width>
+      <width>271</width>
       <height>111</height>
      </rect>
     </property>
@@ -47,7 +34,7 @@
       <rect>
        <x>0</x>
        <y>20</y>
-       <width>261</width>
+       <width>271</width>
        <height>81</height>
       </rect>
      </property>
@@ -85,7 +72,7 @@
      <rect>
       <x>10</x>
       <y>130</y>
-      <width>261</width>
+      <width>271</width>
       <height>111</height>
      </rect>
     </property>
@@ -168,126 +155,175 @@
       <string>minutes</string>
      </property>
     </widget>
+    <widget class="QLabel" name="lblPleaseWait">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>251</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>Please wait, more data is required to estaminate login time</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
-   <widget class="QGroupBox" name="grpNotificationOptions">
+   <widget class="QGroupBox" name="groupBox_4">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>250</y>
-      <width>261</width>
+      <width>271</width>
       <height>141</height>
      </rect>
     </property>
     <property name="title">
-     <string>CallMeBot Notification</string>
+     <string>Status</string>
     </property>
-    <widget class="QCheckBox" name="chkNotificationEnabled">
+    <widget class="QLabel" name="lblGameInstanceCheck">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>30</y>
-       <width>201</width>
-       <height>22</height>
+       <y>50</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/icons/res/cross.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>231</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="text">
-      <string>Notify me if login count is below: </string>
+      <string>Game instance detected</string>
      </property>
-     <property name="checkable">
+    </widget>
+    <widget class="QLabel" name="lblMemAddressCheck">
+     <property name="enabled">
       <bool>true</bool>
      </property>
-     <property name="checked">
-      <bool>true</bool>
-     </property>
-     <property name="tristate">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="txtNotificationThreshold">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>30</y>
-       <width>41</width>
-       <height>24</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>250</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="cmbNotificationMethod">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>60</y>
-       <width>211</width>
-       <height>24</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="txtPhoneNumber">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>151</width>
-       <height>24</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>90</y>
-       <width>101</width>
+       <width>21</width>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/icons/res/cross.png);</string>
+     </property>
      <property name="text">
-      <string>Phone number:</string>
+      <string/>
      </property>
     </widget>
-    <widget class="QLineEdit" name="txtApiKey">
+    <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>172</x>
-       <y>110</y>
-       <width>81</width>
-       <height>24</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>170</x>
+       <x>30</x>
        <y>90</y>
-       <width>71</width>
+       <width>231</width>
        <height>21</height>
       </rect>
      </property>
      <property name="text">
-      <string>API Key:</string>
+      <string>Login memory address</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="lblGlobalState">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>60</y>
-       <width>49</width>
+       <y>20</y>
+       <width>241</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Waiting for login process...</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblGameInstanceInfo">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>231</width>
        <height>21</height>
       </rect>
      </property>
      <property name="text">
-      <string>Via:</string>
+      <string>...</string>
      </property>
     </widget>
+    <widget class="QLabel" name="lblMemAddressInfo">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>231</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnNotificationSettings">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>131</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Notification settings...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnExit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>400</y>
+      <width>131</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
    </widget>
   </widget>
  </widget>
