@@ -2,7 +2,7 @@
 
 ## Cyndi's FFXIV Login Notifier
 
-<img class="plain"  src="xivnotifierartwok.png"/>
+<img style="padding: 0; margin: 0; border: none;" src="xivnotifierartwok.png"/>
 
 Got large login queues in Final Fantasy 14, but still got a real life? Then this is the right tool for you, as it was for me!
 
