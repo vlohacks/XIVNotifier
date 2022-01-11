@@ -7,7 +7,7 @@ Got large login queues in Final Fantasy 14, but still got a real life? Then this
 
 ### Installation and usage
 
-* Download the latest release (zip)
+* Download the latest release (zip) [here](https://github.com/vlohacks/XIVNotifier/releases/latest)
 * Unpack it to a folder of your choice
 * Get an API key for CallMeBot and configure it along with your mobile phone number 
 * Run the game and queue for login
