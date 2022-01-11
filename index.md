@@ -5,7 +5,7 @@ Got large login queues in Final Fantasy 14, but still got a real life? Then this
 * Get informed via eitherr WhatsApp or Signal when the game is about to log you in
 * Get a broad estamination about how long the login takes
 
-## Installation and usage
+## Installation and Usage
 
 * Download the latest release (zip) [here](https://github.com/vlohacks/XIVNotifier/releases/latest)
 * Unpack it to a folder of your choice
