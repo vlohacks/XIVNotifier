@@ -20,7 +20,7 @@ Got large login queues in Final Fantasy 14, but still got a real life? Then this
 
 ## Known Bugs
 
-* The detection of the login queue counter address is still prone to false positives, especially when being logged. Just close the application in this case.
+* The detection of the login queue counter address is still prone to false positives, especially when being logged in. Just close the application after you got logged in.
 
 ## Get in Touch
 
