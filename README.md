@@ -29,15 +29,19 @@ Details are here for [Whatsapp](https://www.callmebot.com/blog/free-api-whatsapp
 
 ## FAQ
 Q: Why does the estaminated time take so long to show up?
+
 A: This information is calculated from changes in the queue and the timespans between these changes. At least 3 changes are required. Just be patient.
 
 Q: How does this generally work?
+
 A: Just like a parser. It searches for the login queue amount in the game's memory and picks out the value.
 
 Q: Help! The login count shows weird values and does not match the 
+
 A: Congratulations, you found a bug. Please contact me :-). Until now the detection worked quite reliable, but if this happens a lot more, I have to improve it.
 
 Q: I love you and want to give you tons of Gil ingame!
+
 A: Visit me on Light/Shiva, Cynthia Cyber :-)
 
 ## Release information and disclaimer

@@ -29,15 +29,19 @@ Weitere Details hier für [Whatsapp](https://www.callmebot.com/blog/free-api-wha
 
 ## FAQ
 Q: Warum dauert es so lange, bis die geschätzte Zeit angezeigt wird?
+
 A: Diese Information wird anhand Veränderungen der Loginqueue und den Zeitspannen dazwischen berechnet. Es braucht dafür mindestens 3 Veränderungen bei der Login-Queue. Sei einfach geduldig.
 
 Q: Wie funktioniert das Teil?
+
 A: Wie ein Parser. Es sucht die Login-Queue-Anzahl im Arbeitsspeicher des Spiels und pickt sich die Zahl raus.
 
 Q: Hilfe! Der Login-Zähler zeigt komisches Zeug and und nicht das, was im Spiel steht!
+
 A: Gratulation, du hast einen Bug gefunden! Bitte kontaktiere mich :-). Bis jetzt hat die Erkennung des Login-Zählers zuverlässig funktioniert, aber wenn das öfters passiert, muss ich das verbessern.
 
 Q: Ich liebe dich! Ich will dir haufenweise Gil ingame geben!
+
 A: Besuche mich auf Light/Shiva, Cynthia Cyber :-)
 
 ## Informationen und Rechtliches
