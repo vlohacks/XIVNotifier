@@ -25,7 +25,6 @@ public:
 private slots:
     void timer_timeout();
     void on_btnNotificationSettings_clicked();
-
     void on_btnExit_clicked();
 
 private:
@@ -35,9 +34,6 @@ private:
 
     const int REFRESH_INTERVAL_IDLE = 10000;
     const int REFRESH_INTERVAL_RUN = 5000;
-
-    const size_t EST_AVG_POINTS_NO = 3;
-    std::vector<int> est_avg_points;
 
     QTime time_init;
     QTime time_last;

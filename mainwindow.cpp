@@ -51,26 +51,14 @@ void MainWindow::timer_timeout()
 
             if (queue_init == -1) {
                 queue_init = queue_current;
-                time_last = QTime::currentTime();
+                time_init = time_last = QTime::currentTime();
             } else {
-                int queue_delta = queue_last - queue_current;
-
-                // calculate average of queue deltas
-                est_avg_points.push_back(queue_delta);
-
-                while (est_avg_points.size() > EST_AVG_POINTS_NO)
-                    est_avg_points.erase(est_avg_points.begin());
-
-                int queue_delta_avg = 0;
-                for (auto it = est_avg_points.begin(); it != est_avg_points.end(); ++it)
-                    queue_delta_avg += *it;
-
-                queue_delta_avg /= est_avg_points.size();
+                int queue_delta = queue_init - queue_current;
 
                 // calculate estaminated login time from average delta
                 QTime now = QTime::currentTime();
-                int secs_delta = time_last.secsTo(now);
-                int secs_est = (int)(((double)secs_delta / (double)queue_delta_avg) * (double)queue_current);
+                int secs_delta = time_init.secsTo(now);
+                int secs_est = (int)(((double)secs_delta / (double)queue_delta) * (double)queue_current);
 
                 time_est = QTime(0, 0).addSecs(secs_est);
 
@@ -125,7 +113,6 @@ void MainWindow::timer_timeout()
 
         if (running) {
             timer.setInterval(REFRESH_INTERVAL_RUN);
-            time_init = QTime::currentTime();
 
             queue_current = observer.getQueue();
             queue_last = queue_current;
