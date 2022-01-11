@@ -6,7 +6,7 @@
 
 Got large login queues in Final Fantasy 14, but still got a real life? Then this is the right tool for you, as it was for me!
 
-* Get informed via eitherr WhatsApp or Signal when the game is about to log you in
+* Get informed via either WhatsApp or Signal when the game is about to log you in
 * Get a broad estamination about how long the login takes
 
 ## Installation and Usage
